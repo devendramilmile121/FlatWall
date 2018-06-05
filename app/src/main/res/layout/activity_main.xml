@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <ImageView
+        android:id="@+id/flatwall_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:src="@drawable/splash"/>
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:src="@drawable/mwlin"/>
+    <com.github.glomadrian.grav.GravView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:animationGenerator="com.github.glomadrian.grav.generator.animation.SideToSideAnimator"
+        app:side_to_side_min_duration="500"
+        app:ball_to_size="1dp"
+        app:side_to_side_max_duration="3000"
+        app:side_to_side_direction="leftToRight"
+        app:colorGenerator="com.github.glomadrian.grav.generator.paint.ArrayColorGenerator"
+        app:gravGenerator="com.github.glomadrian.grav.generator.grav.BallGenerator"
+        app:pointGenerator="com.github.glomadrian.grav.generator.point.RegularPointGenerator"/>
+</RelativeLayout>

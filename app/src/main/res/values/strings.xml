@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Flat Wall</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_fav">Favourites</string>
+    <string name="nav_setting">Settings</string>
+    <string name="not_sign_in">Ah ! You are not signed in ! \nPlease sign in :)</string>
+    <string name="nav_dev">About Dev</string>
+</resources>
